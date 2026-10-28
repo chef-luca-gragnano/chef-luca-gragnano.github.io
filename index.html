@@ -168,6 +168,22 @@ footer a { color: var(--oro); }
   .button-outline { margin-left: 0; }
   .contact-box { padding: 24px; }
 }
+  .hero h1 {
+  font-size: clamp(20px, 4.2vw, 64px);
+  white-space: nowrap;
+  letter-spacing: -1.5px;
+}
+
+.hero h1 br {
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: clamp(19px, 5.5vw, 32px);
+    letter-spacing: -1px;
+  }
+}
 </style>
 </head>
 <body>
@@ -186,8 +202,8 @@ footer a { color: var(--oro); }
 <section class="hero">
   <div class="hero-content">
     <div class="eyebrow">Private chef · Milano e dintorni</div>
-   <h1>Consiglio, Cucino, Creo.<br>Per te.</h1>
-    <p>Cene private, occasioni speciali e creazioni gastronomiche su misura. Porto la mia cucina a casa tua, per trasformare ogni incontro in un ricordo da assaporare.</p>
+<h1><span>Consiglio, Cucino, Creo.</span><br>Per te.</h1>
+    <p>Dalla consulenza gastronomica alle cene private, fino alle creazioni artigianali: porto la mia esperienza nella tua cucina, per dare forma alle tue idee.</p>
     <a class="button" href="#contatti">Progettiamo la tua serata</a>
     <a class="button button-outline" href="#servizi">Scopri le esperienze</a>
   </div>
